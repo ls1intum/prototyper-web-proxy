@@ -26,6 +26,6 @@ server {
     location / {
         proxy_pass              http://prototyper;
         proxy_set_header        X-Forwarded-Proto https;
-        proxy_set_header        Host prototyper2.ase.in.tum.de;
+        proxy_set_header        Host prototyper.example.com; #FIXME
     }
 }
