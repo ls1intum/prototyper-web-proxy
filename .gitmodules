@@ -1,0 +1,3 @@
+[submodule "prototyper_web"]
+	path = prototyper_web
+	url = https://github.com/ls1intum/prototyper_web.git
