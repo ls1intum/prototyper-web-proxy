@@ -13,18 +13,14 @@
         ```
 - Follow the setup instructions in `./prototyper_web/readme.md` file 
 - Update the `#FIXME` entries in `./nginx/prototyper.yml` and in `init_certbot.sh`
+- Start the Prototyper service (required for nginx in the next step)
+    ```bash
+    docker-compose up -d --build prototyper_web
+    ```
 - Execute the certbot script 
     ```bash
     ./init_certbot.sh
     ```
-- Start the service with 
-    ```bash
-    docker-compose up -d --build
-    ```
-
-- TBA 
-    - TODO: certbot script 
-
 
 ## Update to newest version 
 
