@@ -14,8 +14,18 @@
 - Follow the setup instructions in `./prototyper_web/readme.md` file 
 - Start the service with 
     ```bash
-    docker-compose up -d -build
+    docker-compose up -d --build
     ```
 
 - TBA 
     - TODO: certbot script 
+
+
+## Update to newest version 
+
+```bash
+docker-compose down
+git pull
+git submodule update --remote --merge
+docker-compose up -d --build
+```
