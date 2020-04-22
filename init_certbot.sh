@@ -2,7 +2,7 @@
 
 domain="prototyper.example.com" #FIXME
 email="info@example.com"        #FIXME
-certbot_path="./cerbot"
+certbot_path="./certbot"
 
 # Downloading TLS paramters from certbot git-repo"
 echo "Downloading TLS paramters"
