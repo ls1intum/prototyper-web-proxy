@@ -6,6 +6,11 @@
     ```bash
     git clone --recurse-submodules https://github.com/ls1intum/prototyper-web-proxy.git
     ```
+    - If you already cloned the reposiotry without the `--recurse-submodules` option, you can use the following commands to checkout prototyper_web
+        ```bash
+        git submodule init
+        git submodule update --remote --merge
+        ```
 - Follow the setup instructions in `./prototyper_web/readme.md` file 
 - Start the service with 
     ```bash
