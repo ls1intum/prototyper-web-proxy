@@ -1,6 +1,6 @@
 version: '3'
 services:
-  prototyper_web:
+  prototyper:
     container_name: prototyper
     build:
       context: ./prototyper_web
@@ -17,6 +17,7 @@ services:
       - ./prototyper_web/private:/home/app/prototyper_web/private
     command: sh /home/app/prototyper_web/entrypoint.sh
   nginx:
+    container_name: nginx
     image: nginx
     ports:
       - "80:80"
@@ -27,6 +28,7 @@ services:
       - ./certbot/www:/var/www/certbot
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
   certbot:
+    container_name: certbot
     image: certbot/certbot
     volumes:
       - ./certbot/conf:/etc/letsencrypt
