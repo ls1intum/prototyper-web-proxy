@@ -12,6 +12,7 @@
         git submodule update --remote --merge
         ```
 - Follow the setup instructions in `./prototyper_web/readme.md` file 
+- Update the `#FIXME` entries in `./nginx/prototyper.yml`
 - Start the service with 
     ```bash
     docker-compose up -d --build
