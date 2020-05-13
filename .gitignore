@@ -1,3 +1,7 @@
 Exclude "real" config files
 **.conf
 **.yml
+**.sh 
+
+certbot/
+**.pem
