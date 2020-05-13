@@ -12,7 +12,6 @@
         git submodule update --remote --merge
         ```
 - Follow the setup instructions in `./prototyper_web/readme.md` file without the reverse proxy, but do not start the containers yet
-- Rename `./docker-compose.yml.template` to `./docker-compose.yml`
 - Rename `./nginx/prototyper.conf.template` to `./nginx/prototyper.conf`
 - Update the `#FIXME` entries in `./nginx/prototyper.yml` and in `./init_certbot.sh`
 - Start the Prototyper service (required for nginx in the next step)
