@@ -1,0 +1,3 @@
+Exclude "real" config files
+**.conf
+**.yml
